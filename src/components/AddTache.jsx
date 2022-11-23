@@ -2,8 +2,9 @@ import React from 'react';
 
 const AddTache = () => {
     return (
-        <div>
-            
+        <div className='add'>
+            <input type="number" name="" id="" />
+            <button>Ajouter</button>
         </div>
     );
 }
