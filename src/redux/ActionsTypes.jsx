@@ -1,0 +1,6 @@
+export const ADD_TASK = 'add'
+export const CHANGE_TASK = 'change'
+export const DELETE_TASK = 'delete'
+export const DELETEALL_TASK = 'addall'
+export const DEL_COMPLETED_TASK = 'addCOM'
+export const DEL_UNCOMPLETED_TASK = 'addUNCOM'

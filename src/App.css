@@ -96,11 +96,15 @@
 
 .tache {
   display: flex;
+  background-color: azure;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .tache h2 {
   flex-grow: 1;
   text-align: left;
+  
 }
 
 
