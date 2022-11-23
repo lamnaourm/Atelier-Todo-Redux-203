@@ -99,12 +99,20 @@
   background-color: azure;
   padding: 5px;
   border-radius: 10px;
+  gap: 10px;
 }
 
 .tache h2 {
   flex-grow: 1;
   text-align: left;
-  
+}
+
+.tache button {
+  background-color: darkcyan;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
 }
 
 
