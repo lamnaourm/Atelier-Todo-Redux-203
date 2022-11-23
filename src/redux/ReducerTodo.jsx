@@ -54,12 +54,12 @@ const ReducerTodo = (state = initial_state, action) => {
     case Actions.DEL_COMPLETED_TASK:
         return {
             ...state,
-            tasks: state.tasks.filter((item) => !item.completed),
+            tasks: state.tasks.filter((item) => item.completed),
           };
     case Actions.DEL_UNCOMPLETED_TASK:
         return {
             ...state,
-            tasks: state.tasks.filter((item) => item.completed),
+            tasks: state.tasks.filter((item) => !item.completed),
           };
   }
   return state;

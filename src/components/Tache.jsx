@@ -1,6 +1,11 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { changetache, deletetache } from "../redux/ActionsCreators";
 
 const Tache = (props) => {
+
+  const dispatch = useDispatch();
+
   return (
     <div className="tache">
       <h2>
@@ -10,8 +15,8 @@ const Tache = (props) => {
           props.tache.task
         )}
       </h2>
-      <button>Modifier</button>
-      <button>Supprimer</button>
+      <button onClick={() => dispatch(changetache(props.tache.id))}>Modifier</button>
+      <button onClick={() => dispatch(deletetache(props.tache.id))}>Supprimer</button>
     </div>
   );
 };
